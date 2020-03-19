@@ -10,7 +10,7 @@ PID::~PID() {}
 
 void PID::Init(double Kp_, double Ki_, double Kd_, double sat_min_, double sat_max_) {
   /**
-   * TODO: Initialize PID coefficients (and errors, if needed)
+   * Initialize PID coefficients (and errors, if needed)
    */
     Kp = Kp_;
     Ki = Ki_;
@@ -28,7 +28,7 @@ void PID::Init(double Kp_, double Ki_, double Kd_, double sat_min_, double sat_m
 
 void PID::UpdateError(double cte) {
   /**
-   * TODO: Update PID errors based on cte.
+   * Update PID errors based on cte.
    */
     double diff_cte;
     if (!flag_first_it){
@@ -50,7 +50,7 @@ void PID::UpdateError(double cte) {
 
 double PID::TotalError() {
   /**
-   * TODO: Calculate and return the total error
+   * Calculate and return the total error
    */
     double total_error = p_error+d_error+i_error;
     double total_error_abs = std::abs(p_error)+std::abs(d_error)+std::abs(i_error);
