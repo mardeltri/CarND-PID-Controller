@@ -6,10 +6,9 @@
 
 
 ### 1. Introduction
-In this project, a PID controller is implemented in order to maneuver a car around a track. The simulator will provide the cross track error (CTE) and the velocity (mph) in order to compute the appropiate steering angle.
+In this project, a PID controller is implemented in order to maneuver a car around a track. The simulator provide the cross track error (CTE) and the velocity (mph) in order to compute the appropiate steering angle.
 
-First, the state machine which has been implemented will be discussed. The path generation algorithm will be explained in the second section. Finally, the controller implemented to follow other cars is addressed in the last section.
-
+First, the PID controller will be introduced. Later, the effect of each term of the PID controller will be discussed. Finally, how the hyperparameters were selected has been explained.
 ![State machine][image1]
 
 ### 2. PID controller
