@@ -12,9 +12,8 @@ First, the PID controller will be introduced. Later, the effect of each term of 
 ![State machine][image1]
 
 ### 2. PID controller
-Two PID controllers have been tuned one for the steering angle control and other for the car speed. A C++ class have been implemented in order to include the PID controller. Particular parameters are set with the init method.
+Two PID controllers have been tuned: one for the steering angle control and other for the car speed. A C++ class has been implemented in order to include the PID controller. Given that each controller have its own parameters, the init method has been designed to include:
 
-The initials parameters are:
 * Kp: proportional gain.
 * Ki: integral gain.
 * Kd: derivative gain.
